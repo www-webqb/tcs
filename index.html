@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<script src="functions.js"></script>
+	<script src="贪吃蛇.js"></script>
+	<style>
+     body{
+          background: #ccc;
+     }
+     #box{
+     	width: 600px;
+     	height: 600px;
+     	margin: 0 auto;
+     	border: 1px solid aqua;
+          background-image: url(20.jpg);
+          background-size:100% 100%;
+          box-shadow: 0px 0px 200px lightskyblue;  
+     }
+     #box div{
+     	width: 28px;
+     	height: 28px;
+     	border: 1px solid skyblue;
+     	float: left;
+     }
+     .se{
+     	background: aqua;
+     }
+     .food{
+     	background: red;
+     }
+     .btn1{
+          width: 100px;
+          height: 50px;
+          position: fixed;
+          left: 50px;
+          top: 180px;
+          border-radius: 15px;
+          background: aquamarine;
+          color: #fff;
+          font-size: 20px;
+          line-height: 50px;
+          text-align: center;
+          font-weight: bolder;
+          cursor:pointer;
+          transition-property:background;
+          transition-property:color;
+          transition:all 1s linear;
+     }
+     .btn1:hover{
+          background: #fff;
+          color: black;
+     }
+     .btn2{
+          width: 100px;
+          height: 50px;
+          position: fixed;
+          left: 50px;
+          top: 240px;
+          border-radius: 15px;
+          background: aquamarine;
+          color: #fff;
+          font-size: 20px;
+          line-height: 50px;
+          text-align: center;
+          font-weight: bolder;
+          cursor:pointer;
+          transition-property:background;
+          transition-property:color;
+          transition:all 1s linear;
+     }
+     .btn2:hover{
+          background: #fff;
+          color: black;
+     }
+     .btn3{
+          width: 150px;
+          height: 50px;
+          position: fixed;
+          left: 50px;
+          top: 50px;
+          border-radius: 15px;
+          background: chartreuse;
+          color: #fff;
+          font-size: 20px;
+          line-height: 50px;
+          text-align: center;
+          font-weight: bolder;
+          cursor:pointer;
+          transition-property:width,height;
+          transition-property:background;
+          transition-property:color;
+          transition:all 1s linear;
+     }
+     .btn3:hover{
+          width: 160px;
+          height: 60px;
+          background: lightblue;
+          color: black;
+     }
+     .people{
+          width: 120px;
+          height: 120px;
+          position: fixed;
+          right: 170px;
+          top: 60px;
+     }
+     .people img{
+          width: 120px;
+          height: 120px;          
+     }
+     .rw1{
+          width: 100px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          font-weight: bolder;
+          color: #fff;
+          font-size: 20px;
+          position: fixed;
+          right: 175px;
+          top: 190px;
+     }
+     .rw2{
+          width: 100px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          font-weight: bolder;
+          color: #fff;
+          font-size: 20px;
+          position: fixed;
+          right: 175px;
+          top: 425px;
+     }
+     .computer{
+          width: 120px;
+          height: 120px;
+          position: fixed;
+          right: 170px;
+          top: 300px;
+     }
+     .computer img{
+          width: 120px;
+          height: 120px;          
+     }
+     .jshu{
+          width: 100%;
+          height: 100%;
+          background: black;
+          opacity: 0.7;
+          position: fixed;
+          left: 0;
+          top: 0;
+          display: none;
+     }
+     .img{
+          width: 911px;
+          height: 536px;
+          margin: 0 auto;
+          opacity: 0.8;
+          position: fixed;
+          left: 200px;
+          top: 100px;
+          display: none;
+          transition:all 3s linear;
+     }
+     .img:hover{
+          transform:rotate(-360deg);
+     }
+	</style>
+</head>
+<body>
+	<div id="box">
+		
+	</div>
+     <audio autoplay="autopaly" loop="true">
+          <source src="V.A. - BGM2.mp3"/>
+     </audio>
+     <div class="btn1">游戏运行</div>
+     <div class="btn3">游戏</div>
+     <div class="btn2">游戏暂停</div>
+     <div class="people">
+          <img src="225.gif" alt="">
+     </div>
+     <span class="rw1">人物一</span>
+     <div class="computer">
+          <img src="226.gif" alt="">
+     </div>
+     <span class="rw2">人物二</span>
+     <div class="jshu">
+          <img src="117.jpg" class="img">
+     </div>
+</body>
+</html>
